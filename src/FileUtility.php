@@ -18,10 +18,8 @@ class FileUtility
             throw new Exception('Invalid file path');
         }
 
-        // Read JSON file
         $json_data = file_get_contents($json_file);
 
-        // Decode JSON to PHP array
         $data = json_decode($json_data, true);
 
         return $data;

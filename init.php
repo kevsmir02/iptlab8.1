@@ -10,10 +10,6 @@ $dotenv->load();
 $log = new Logger('app');
 $log->pushHandler(new StreamHandler('app.log', Level::Warning));
 
-/**
- * Helper functions
- */
-
 function dump($data) {
     echo '<pre>';
     print_r($data);
